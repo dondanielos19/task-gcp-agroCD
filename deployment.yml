@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-world-flask
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-world-flask
+  template:
+    metadata:
+      labels:
+        app: hello-world-flask
+    spec:
+      containers:
+      - name: hello-world-flask
+        image: gcr.io/projekt2-433410/hello-world-flask:v1
+        ports:
+        - containerPort: 8080
