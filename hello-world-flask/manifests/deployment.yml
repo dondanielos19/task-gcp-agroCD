@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   name: hello-world-flask
   namespace: default
+  labels:
+    app: hello-world-flask
 spec:
   replicas: 1
   selector:
@@ -15,6 +17,6 @@ spec:
     spec:
       containers:
       - name: hello-world-flask
-        image: gcr.io/projekt2-433410/hello-world-flask:v1
+        image: us-central1-docker.pkg.dev/green-link-434808-m1/repo/hello-world-flask:v2  # Uzupełnij o ścieżkę do swojego projektu
         ports:
-        - containerPort: 8080
+        - containerPort: 5000
