@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: hello-world-flask
-        image: us-central1-docker.pkg.dev/green-link-434808-m1/repo/hello-world-flask:v2  # Uzupełnij o ścieżkę do swojego projektu
+        image: us-central1-docker.pkg.dev/my-task-123/repo/hello-world-flask:v1  # Complete with path to your project
         ports:
         - containerPort: 5000
