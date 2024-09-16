@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: hello-world-flask
-        image: us-central1-docker.pkg.dev/my-task-1234/repo/hello-world-flask:v1  # Complete with path to your project
+        image: us-central1-docker.pkg.dev/my-task-12345/repo/hello-world-flask:v1  # Complete with path to your project
         ports:
         - containerPort: 5000
